@@ -2,10 +2,12 @@ import { Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 
 @Controller('pacientes')
 export class PacientesController {
+//metodos para datos pacientes
+
     //metodo ver pacientes
     @Get()
     async getPacientes(){
-        return 'todos los pacientes';
+        return 'datos de todos los pacientes';
     }
 
     @Get(':rut')
