@@ -12,7 +12,7 @@ export class PacientesController {
 
     @Get(':rut')
     async getPaciente(@Param('rut') rut:string){
-        return `producto ${ rut }`;
+        return `conseguir paciente por rut ${ rut }`;
     }
 
     @Post()
